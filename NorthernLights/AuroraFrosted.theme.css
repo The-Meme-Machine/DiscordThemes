@@ -1,0 +1,139 @@
+/**
+ * @name Aurora Frosted
+ * @author Donald Rumsfeld#0531
+ * @version 2.0.0
+ * @description Display your picture of choice with adjustable blur and brightness. Dark theme is required.
+ * @invite ZHthyCw
+ * @donate https://paypal.me/IanRGibson
+ * @authorId 174868361040232448
+ * @source https://github.com/Gibbu/BetterDiscord-Themes/tree/master/FrostedGlass
+ * @website https://gibbu.me/
+*/
+
+@import url("https://discordstyles.github.io/FrostedGlass/base.css");
+
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap'); */
+
+/* BlackBox tags */
+@import url('https://monstrousdev.github.io/themes/addons/user-tags.css');
+
+/* Old Windows titlebar - remove this @import if you wish to use default titlebar */
+@import url("https://gibbu.github.io/BetterDiscord-Themes/addons/windows-titlebar.css");
+
+:root {
+  /* Background image variables */
+  --background-image: var(--popout-modal-image);
+  /* --background-image: url('https://i.imgur.com/Uy9Mn6i.png'); */
+  /* Main background image | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
+  --background-image-blur: 10px;
+  /* Blur intensity of --background-image | Must end in px | DEFAULT: 5px */
+  --background-image-size: cover;
+  /* Size of the background image | DEFAUT: cover | OPTIONS: cover, contain */
+  --background-image-position: center;
+  /* Position of background image | DEAFULT: center | OPTIONS: top, right, bottom, left, center */
+
+  /* Popout & Modal variables */
+  /* --popout-modal-image: url('https://media.giphy.com/media/krQzJaxbU1aXS/source.gif'); */
+  --popout-modal-image: url('https://media.giphy.com/media/O0zruKKBtP6Ao/source.gif');
+  /* Background image for popouts and modals | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
+  --popout-modal-blur: 10px;
+  /* Blur intensity of --popout-modal-image | Must end in px | DEFAULT: 5px */
+  --popout-modal-size: cover;
+  /* Size of the popout/modal image | DEFAUT: cover | OPTIONS: cover, contain */
+  --popout-modal-position: center;
+  /* Position of popout/modal image | DEAFULT: center | OPTIONS: top, right, bottom, left, center */
+
+  /* Home image variables */
+  --home-button-image: url('https://discordstyles.github.io/FrostedGlass/assets/discord.svg');
+  /* Home button image | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
+  --home-button-size: cover;
+  /* Size of the home button image | DEFAUT: cover */
+  --home-button-position: center;
+  /* Position of home button image | DEAFULT: center */
+
+  /* Brightness variables */
+  --serverlist-brightness: 0.7;
+  /* Brightness for serverlist | 0 - 1 (decimals allowed) | DEFAULT: 0.8 */
+  --left-brightness: 0.6;
+  /* Channels and DM list brightness | 0 - 1 (decimals allowed) | DEFAULT: 0.8 */
+  --middle-brightness: 0.5;
+  /* Chat brightness | 0 - 1 (decimals allowed) | DEFAULT: 0.6 */
+  --right-brightness: 0;
+  /* Members and Now Playing brightness | 0 - 1 (decimals allowed) | DEFAULT: 0 */
+  --popout-modal-brightness: 0.6;
+  /* Brightness for popouts and modals | 0 - 1 (decimals allowed) | DEFAULT: 0.75 */
+
+  /* Gradient variables */
+  --gradient-primary: 91, 243, 158;
+  /* DEFAULT: 103,58,183 */
+  /* --gradient-secondary: 0, 0, 0; */
+  --gradient-secondary: 148, 125, 209;
+  /* --gradient-secondary: 155, 89, 242; */
+  /* DEFAULT: 63,81,181 */
+  --gradient-direction: 150deg;
+  /* DEFAULT: 320deg */
+
+  /* Tint variables */
+  --tint-colour: 255, 51, 159;
+  /* Colour of tint | DEAFULT: 255,51,159 */
+  --tint-brightness: 0;
+  /* Brightness of --tint-colour | 0 - 1 (decimals allowed) | DEFAULT: 0 */
+
+  /* Other variables */
+  --window-padding: 0px;
+  /* Spacing around the Discord window | DEFAULT: 20px */
+  --window-roundness: 0px;
+  /* Roundness of Discord | DEFAULT: 10px */
+  --scrollbar-colour: rgba(91, 255, 158, 0.2);
+  /* DEFAULT: rgba(255,255,255,0.05) */
+  --link-colour: #00edff;
+  /* DEFAULT: #00b0f4 */
+  --show-gift-gif-buttons: block;
+  /* Show buttons: block | Hide buttons: none | DEFAULT: none */
+
+  /*
+    Visit https://fonts.google.com and select one to your liking.
+    Now just follow this tutorial: https://imgur.com/a/CNbw7xC
+  */
+  --font: 'Nemesia';
+  /* --font: 'Lexend Deca'; */
+
+  /* Do not touch */
+  --update-notice-1: none;
+}
+
+* {
+  /* font-size: 24px important; */
+  /* font-size-adjust: 0.75 !important; */
+  /* line-height: 0.8; */
+}
+
+#app-mount [role=menu]:before,
+#app-mount .autocompleteInner-zh20B_:before,
+#app-mount .container-3ayLPN:before,
+#app-mount .container-enaOkj:before,
+#app-mount .contextMenu-HLZMGh:not(.scroller-2FKFPG):before,
+#app-mount .emojiPicker-3PwZFl:before,
+#app-mount .messagesPopoutWrap-1MQ1bW:before,
+#app-mount .modal-yWgWj-:not(.slide-2pHaq5):before,
+#app-mount .root-1gCeng:not(.fullscreenOnMobile-1bD22y):before,
+#app-mount .root-SR8cQa:before,
+#app-mount .subMenuContext-2n_9YM .scrollerWrap-2lJEkd:before,
+#app-mount .userPopout-3XzG_A:before,
+#app-mount section.positionContainer-3unAXC .drawerSizingWrapper-27qFHb:before,
+#app-mount .quickswitcher-3JagVE:before,
+#app-mount .root-1gCeng.wrapper-2ZbzR9:before,
+#app-mount .modalRoot-1Kx4Hb:before,
+#app-mount .container-3JTnYm.thin-1ybCId.scrollerBase-289Jih:before {
+  /* box-shadow: inset 0 0 0 100vmax rgba(var(--gradient-secondary), var(--popout-modal-brightness)); */
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, var(--popout-modal-brightness));
+  background: linear-gradient(var(--gradient-direction), rgba(var(--gradient-primary), var(--popout-modal-brightness)), rgba(var(--gradient-secondary), var(--popout-modal-brightness))), var(--popout-modal-image);
+}
+
+#app-mount .uploadModal-2ifh8j:after {
+  background: rgba(4, 51, 102, var(--popout-modal-brightness));
+}
+
+.container-2dqNWc {
+  background: linear-gradient(var(--gradient-direction), rgba(var(--gradient-primary), 0.95), rgba(var(--gradient-secondary), 0.95));
+}
